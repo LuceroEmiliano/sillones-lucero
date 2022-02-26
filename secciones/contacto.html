@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../estilos/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="contenedor">
+        <header class="header">
+            <img src="../Imagenes/faviconsillones.png" alt="icono">
+            <nav class="nav">
+                <!-- enlaces relativos -->
+                <ul class="menu">
+                    <li>
+                        <a href="../index.html"> Inicio </a>
+                    </li>
+                    <li>
+                        <a href="nosotros.html">Nosotros</a>
+                    </li>
+                    <li>
+                        <a href="productos.html">Productos</a>
+                        <ul class="submenu">
+                            <li>
+                                <a href="prod_sillas.html">Sillas</a>
+                            </li>
+                            <li>
+                                <a href="prod_sillones.html">Sillones</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="contacto.html"> Contacto</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main class="main">
+            <section class="contenido1">
+                <div>
+                    <h1>
+                        CONTACTO
+                    </h1>
+                    <div>
+                        <p>Nuestras sucursales se encuentran en las <a href="#Direcciones">direcciones</a></p>
+                        <p>Nuestras contacto con WhatsApp se encuentran en <a href="#Direcciones">contactos</a></p>
+                    </div>
+                </div>
+            </section>
+            <section class="contenido1">
+                <div>
+                    <form>
+                        <label for="nombre_apellido">Nombre y apellido: </label>
+                        <!--utilizo el for para pedir el dato-->
+                        <input type="text" name="nombre_apellido">
+                        <!-- almaceno el pedido de input en la variable name-->
+                    </form>
+                    <form>
+                        <input type="submit" value="Enviar">
+                        <input type="reset" value="Limpiar">
+                    </form>
+                    <div>
+                        <form>
+                            <!--Lista de opciones-->
+                            <select name="Genero">
+                                <option value="hombre">Hombre</option>
+                                <option value="mujer">Mujer</option>
+                                <option value="no_dice">Prefiero no decirlo</option>
+                            </select>
+                        </form>
+                    </div>
+                </div>
+            </section>
+            <section class="contenido1">
+                <div>
+                    <form>
+                        <label for="email">Correo: </label>
+                        <input type="text" name="email">
+                    </form>
+                    <form>
+                        <input type="submit" value="Enviar">
+                        <input type="reset" value="Limpiar">
+                    </form>
+                </div>
+            </section>
+            <section class="contenido1">
+                <div>
+                    <form>
+                        <!--Agrupa contenido de botones, iconos, se selecciona una opcion-->
+                        <div>Asesoria de producto
+                            <input type="radio" name="pedido" id="Pedido">
+                        </div>
+                        <div>Consulta
+                            <input type="radio" name="pedido" id="Consultar">
+                            <!--el type radio para que usar las opciones y el name tiene que tener el mismo nombre para que se seleccione una sola de las opciones, agrupar las opciones-->
+                        </div>
+                    </form>
+                    <div>
+                        <form>
+                            <label for="pedido_consulta">Escribir aqui en que podemos ayudarle: </label>
+                            <input type="text" name="pedido_consulta">
+                        </form>
+                        <form>
+                            <input type="submit" value="Enviar">
+                            <input type="reset" value="Limpiar">
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer id="Direcciones" class="footer">
+            <p>Callao 1560 Rosario-Santa Fe</p>
+            <p>Buenos Aires 5923 Rosario-Santa Fe</p>
+            <p>0341 - 156 823967</p>
+        </footer>
+    </div>
+</body>
+
+</html>
