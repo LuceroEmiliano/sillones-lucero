@@ -6,12 +6,12 @@
 }
 
 body{
-    background-color: slateblue;
-    /*margin:0.2cm;
+    /*background-color: slateblue;
+    margin:0.2cm;
     padding: 2cm;*/
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: large;
-    color: white
+    color:darkblue
 }
 
 .contenedor{
@@ -28,25 +28,48 @@ body{
     "footer  footer";
 }
 
+.banner {
+    background: url("../Imagenes/herosection.jpg")fixed center/cover;
+    height: 100%;
+    position:relative;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: cyan;
+    opacity: 0.8;
+
+}
+
 /*------------------------header------------------------*/
 
-/*.titulo{
-    grid-area: titulo;
-    align-content: center;
-}*/
+.titulo{
+    background-color: lightcoral;
+    height: 150px;
+    width: 100px;
+    margin:40px;
+}
+
+.navbar{
+    width: 100%;
+}
 
 .header{
     display: flex;
     grid-area: header;
-    background-color: red;
+    /*background-color: red;*/
     /*margin: 10px 20px 0px 0px;*/
-    padding: 20px;
-    border-radius: 15px;
     border:solid orange;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    justify-content: space-around;
+    /*justify-content: space-around;
+    padding: 20px;
+    border-radius: 15px;
     align-items: center;
-    /*height: 180px;*/
+    height: 180px;*/
 }
 
 /*.nav{
@@ -104,9 +127,21 @@ a{
     transition: color 0.4s linear 0.2s;
 }
 
-.header img{
+
+.carousel-inner div img{
+    height: auto;
+    width: auto;
+    max-width: 500px;
+    max-height: 300px;
+}
+
+.navbar-brand img{
     -webkit-transition: 1s linear;
     transition: 1s linear;
+    height: auto;
+    width: auto;
+    max-width: 100px;
+    max-height: 100px;
 }
 .header img:hover{
     -webkit-transform: scale(.5);
@@ -121,16 +156,19 @@ a{
 
 }
 
-.main h1
+.main div 
 {
+    padding-top: 100px;
     text-align: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .contenido1 > div {
-    margin: 10px;
+    margin: 5px;
     padding: 15px;
     display: flex;
     align-items: center;
+    justify-content: space-around;
 }
 
 .contenido1 div img{
@@ -144,6 +182,7 @@ a{
 
 .contenido2 > div {
     display: flex;
+    justify-content: space-around;
     align-items: center;
     flex-direction: row-reverse;
 }
@@ -167,16 +206,34 @@ iframe{
 p{
     padding: 5px;
 }
+.imagenesrotadas img{
+    transition: 2s;
+}
+
+.imagenesrotadas img:hover{
+    transform:rotate(360deg);
+}
 
 /*------------------------footer------------------------*/
 footer{
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     grid-area:footer;
     margin-bottom: 10px;
     margin-left: 4px;
     padding: 10px;
-    background-color: red;
+    /*background-color: red;*/
     border-radius: 10px;
     border: solid orange
+}
+
+.footer div img{
+    height: auto;
+    width: auto;
+    max-width: 100px;
+    max-height: 100px;
 }
 
 /*------------------------media queries------------------------*/
@@ -202,7 +259,7 @@ footer{
         padding: 10px;
     }
 
-    
+
 }
 
 @media screen and (max-width:750px){
@@ -223,7 +280,6 @@ footer{
     .footer{
         flex-direction: column;
     }
-
 
 
 }

@@ -14,6 +14,40 @@
 <body>
     <div class="contenedor">
         <header class="header">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html"><img src="../Imagenes/faviconsillones.png" alt="icono"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Productos
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="prod_sillones.html">Sillones</a></li>
+                            <li><a class="dropdown-item" href="prod_sillas.html">Sillas</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+    <!--
             <img src="../Imagenes/faviconsillones.png" alt="icono">
             <nav class="nav">
                 <ul class="menu">
@@ -38,19 +72,29 @@
                         <a href="contacto.html"> Contacto</a>
                     </li>
                 </ul>
-            </nav>
-        </header>
-        <main>
-            <section>
-                <p>Nuestras sucursales se encuentran en las <a href="#Direcciones">direcciones</a></p>
-                <p>Nuestras contacto con WhatsApp se encuentran en <a href="#Direcciones">contactos</a></p>
-            </section>
-        </main>
+            </nav> -->
 
-        <footer id="Direcciones">
-            <p>Callao 1560 Rosario-Santa Fe</p>
-            <p>Buenos Aires 5923 Rosario-Santa Fe</p>
-            <p>0341 - 156 823967</p>
+        <main class="main">
+            <section class="Titulo">
+                <div>
+                    <h1>SILLAS</h1>
+                    <p>Nuestras sucursales se encuentran en las <a href="#Direcciones">direcciones</a></p>
+                    <p>Nuestras contacto con WhatsApp se encuentran en <a href="#Direcciones">contactos</a></p>
+                </div>
+            </section>
+            </main>
+        <footer id="Direcciones" class="footer">
+            <div>
+                <p>Callao 1560 Rosario-Santa Fe</p>
+                <p>Buenos Aires 5923 Rosario-Santa Fe</p>
+                <p>0341 - 156 823967</p>
+            </div>
+            <div>
+                <img src="../Imagenes/facebook.png" alt="facebook">
+                <img src="../Imagenes/instagram.png" alt="instagram">
+                <img src="../Imagenes/whatsapp.png" alt="whatsapp">
+            </div>
+
         </footer>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
