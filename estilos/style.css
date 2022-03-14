@@ -1,141 +1,367 @@
+* {
+  margin: 0;
+  padding: 0; }
 
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: large;
+  color: darkblue; }
 
-*{
+.contenedor {
+  /*width: 90%;
+    margin:20px;*/
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.2fr auto 0.2fr;
+  gap: 5px 0px;
+  grid-template-areas: "header  header" "main    main" "footer  footer"; }
+
+.banner {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../Imagenes/sillonbanner.jpg") fixed center/cover;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .banner div {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .banner div h1 {
+      color: white;
+      font-weight: 900; }
+    .banner div p {
+      color: white; }
+    .banner div a {
+      color: white;
+      background-color: orange;
+      width: 300px;
+      padding: 20px;
+      margin-top: 20px;
+      text-decoration: none;
+      border-radius: 15px;
+      font-weight: 600px;
+      transition: all 2s; }
+    .banner div a:hover {
+      background-color: #ff4800;
+      color: rgba(255, 230, 0, 0.753);
+      transform: scale(1.5); }
+
+.bannernosotros {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../Imagenes/bannernosostros.jpg") fixed center/cover;
+  align-items: center;
+  justify-content: center; }
+  .bannernosotros div {
+    padding-bottom: 50px; }
+    .bannernosotros div h1 {
+      color: white;
+      font-weight: 900; }
+    .bannernosotros div p {
+      color: white; }
+    .bannernosotros div a {
+      text-decoration: none;
+      color: white;
+      transition: all 1.5s; }
+    .bannernosotros div a:hover {
+      color: blue; }
+
+.bannercontacto {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../Imagenes/bannercontacto.jpg") fixed center/cover;
+  align-items: center;
+  justify-content: center; }
+  .bannercontacto div {
+    padding-bottom: 50px; }
+    .bannercontacto div h1 {
+      color: white;
+      font-weight: 900; }
+    .bannercontacto div p {
+      color: white; }
+    .bannercontacto div a {
+      text-decoration: none;
+      color: white;
+      transition: all 1.5s; }
+    .bannercontacto div a:hover {
+      color: blue; }
+
+.bannersillones {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../Imagenes/bannersillones.jpg") fixed center/cover;
+  align-items: center;
+  justify-content: center; }
+  .bannersillones div {
+    padding-bottom: 50px; }
+    .bannersillones div h1 {
+      color: white;
+      font-weight: 900; }
+    .bannersillones div p {
+      color: white; }
+    .bannersillones div a {
+      text-decoration: none;
+      color: white;
+      transition: all 1.5s; }
+    .bannersillones div a:hover {
+      color: blue; }
+
+.bannersillas {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../Imagenes/bannersillas.jpg") fixed center/cover;
+  align-items: center;
+  justify-content: center; }
+  .bannersillas div {
+    padding-bottom: 50px; }
+    .bannersillas div h1 {
+      color: white;
+      font-weight: 900; }
+    .bannersillas div p {
+      color: white; }
+    .bannersillas div a {
+      text-decoration: none;
+      color: white;
+      transition: all 1.5s; }
+    .bannersillas div a:hover {
+      color: blue; }
+
+.navbar {
+  width: 100%; }
+
+.header {
+  display: flex;
+  grid-area: header;
+  border: solid orange;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; }
+
+.navbar-brand img {
+  -webkit-transition: 1s linear;
+  transition: 1s linear;
+  height: auto;
+  width: auto;
+  max-width: 100px;
+  max-height: 100px; }
+
+.header img:hover {
+  -webkit-transform: scale(0.5);
+  transform: scale(0.5); }
+
+footer {
+  margin-top: 60px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  grid-area: footer;
+  margin-bottom: 10px;
+  margin-left: 4px;
+  padding: 10px;
+  border-radius: 10px;
+  border: solid orange; }
+
+.footer div img {
+  height: auto;
+  width: auto;
+  max-width: 100px;
+  max-height: 100px; }
+
+/*
+* {
     margin: 0;
     padding: 0;
 }
 
-body{
-    /*background-color: slateblue;
-    margin:0.2cm;
-    padding: 2cm;*/
+body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: large;
-    color:darkblue
+    color: darkblue
 }
 
-.contenedor{
-    /*width: 90%;
-    margin:20px;*/
-    display:grid;
-    gap: 10px ;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 0.2fr 1fr 0.2fr;
+.contenedor {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.2fr auto 0.2fr;
     gap: 5px 0px;
-    grid-template-areas: 
-    "header  header"
-    "main    main"
-    "footer  footer";
-}
-
-.banner {
-    background: url("../Imagenes/herosection.jpg")fixed center/cover;
-    height: 100%;
-    position:relative;
+    grid-template-areas:
+        "header  header"
+        "main    main"
+        "footer  footer";
+}*/
+/*.banner {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../Imagenes/sillonbanner.jpg")fixed center/cover;
+    height: 80vh;
+    display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.banner::before{
-    content: "";
-    width: 100%;
-    height: 100%;
-    background: cyan;
-    opacity: 0.8;
+.banner div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.banner div h1 {
+    color: white;
+    font-weight: 900;
 
 }
 
+.banner div p {
+    color: white;
+}
+
+.banner div a {
+    color: white;
+    background-color: orange;
+    width: 300px;
+    padding: 20px;
+    margin-top: 20px;
+    text-decoration: none;
+    border-radius: 15px;
+    font-weight: 600px;
+    transition: all 2s;
+}
+
+
+.banner div a:hover{
+    background-color: rgb(255, 72, 0);
+    color: rgba(255, 230, 0, 0.753);
+    transform: scale(1.5);
+}
+
+.bannernosotros {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../Imagenes/bannernosostros.jpg")fixed center/cover;
+    align-items: center;
+    justify-content: center;
+}
+
+.bannernosotros div{
+    padding-bottom: 50px;
+}
+
+.bannernosotros div h1 {
+    color: white;
+    font-weight: 900;
+
+}
+
+.bannernosotros div p {
+    color: white;
+}
+
+.bannernosotros div a{
+    text-decoration: none;
+    color: white;
+    transition: all 1.5s;
+}
+
+.bannernosotros div a:hover {
+    color: blue;
+}
+
+.bannercontacto {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../Imagenes/bannercontacto.jpg")fixed center/cover;
+    align-items: center;
+    justify-content: center;
+}
+
+.bannercontacto div h1 {
+    color: white;
+    font-weight: 900;
+
+}
+.bannercontacto div{
+    padding-bottom: 50px;
+}
+
+.bannercontacto div p {
+    color: white;
+}
+
+.bannercontacto div a{
+    text-decoration: none;
+    color: white;
+    transition: all 1.5s;
+}
+
+.bannercontacto div a:hover {
+    color: blue;
+}
+
+.bannersillones {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../Imagenes/bannersillones.jpg")fixed center/cover;
+    align-items: center;
+    justify-content: center;
+}
+
+.bannersillones div{
+    padding-bottom: 50px;
+}
+
+.bannersillones div h1 {
+    color: white;
+    font-weight: 900;
+
+}
+
+.bannersillones div p {
+    color: white;
+}
+
+.bannersillones div a{
+    text-decoration: none;
+    color: white;
+    transition: all 1.5s;
+}
+
+.bannersillones div a:hover {
+    color: blue;
+}
+
+.bannersillas {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../Imagenes/bannersillas.jpg")fixed center/cover;
+    align-items: center;
+    justify-content: center;
+}
+
+.bannersillas div{
+    padding-bottom: 50px;
+}
+
+.bannersillas div h1 {
+    color: white;
+    font-weight: 900;
+
+}
+
+.bannersillas div p {
+    color: white;
+}
+
+.bannersillas div a{
+    text-decoration: none;
+    color: white;
+    transition: all 1.5s;
+}
+
+.bannersillas div a:hover {
+    color: blue;
+}*/
 /*------------------------header------------------------*/
-
-.titulo{
-    background-color: lightcoral;
-    height: 150px;
-    width: 100px;
-    margin:40px;
-}
-
-.navbar{
+/*.navbar {
     width: 100%;
 }
 
-.header{
+.header {
     display: flex;
     grid-area: header;
-    /*background-color: red;*/
-    /*margin: 10px 20px 0px 0px;*/
-    border:solid orange;
+    border: solid orange;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    /*justify-content: space-around;
-    padding: 20px;
-    border-radius: 15px;
-    align-items: center;
-    height: 180px;*/
 }
 
-/*.nav{
-    grid-area: nav;
-}
 
-header img{
-    position:absolute;
-}
-*/
-.menu {
-    display: flex;
-    /*padding: 30px;*/
-    list-style: none;
-    font-size:large;
-}
-
-.menu > li{
-    margin-left: 30px;
-    display: inline-block;
-    /*width: 15%;*/
-    position: relative;
-    font-size: 20px;
-}
-
-.menu li > a{ 
-    text-decoration: none;/*Para sacerle el subrayado a los enlaces*/
-    color:white
-}
-.menu li a:hover{
-    color:orange
-} 
-
-.menu li > .submenu {
-    display: none;
-    position: absolute;
-    min-width: 140px;
-}
-.menu li:hover >.submenu {
-    display: block;
-}
-
-.submenu {
-    position: absolute;
-    list-style: none;
-    background-color: slateblue;
-}
-
-.submenu li a{
-    display: block;
-    padding: 15px;
-}
-
-a{
+a {
     transition: color 0.4s linear 0.2s;
 }
 
 
-.carousel-inner div img{
-    height: auto;
-    width: auto;
-    max-width: 500px;
-    max-height: 300px;
-}
 
-.navbar-brand img{
+.navbar-brand img {
     -webkit-transition: 1s linear;
     transition: 1s linear;
     height: auto;
@@ -143,143 +369,245 @@ a{
     max-width: 100px;
     max-height: 100px;
 }
-.header img:hover{
+
+.header img:hover {
     -webkit-transform: scale(.5);
     transform: scale(.5);
-}
-
-
+}*/
+/*.carousel-inner div img{
+    height: auto;
+    width: auto;
+    max-width: 500px;
+    max-height: 300px;
+}*/
 /*------------------------main------------------------*/
+.main {
+  grid-area: main; }
 
-.main{
-    grid-area:main;
-
-}
-
-.main div 
-{
-    padding-top: 100px;
-    text-align: center;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-}
+.main div {
+  padding-top: 100px;
+  text-align: center;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; }
 
 .contenido1 > div {
-    margin: 5px;
-    padding: 15px;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
+  background-color: purple;
+  margin: 5px;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around; }
 
-.contenido1 div img{
-    padding:20px;
-    margin: 8px;
-    
-}
-.contenido1 div .parrafo{
-    margin:40px;
-}
+.contenido1 div img {
+  padding: 20px;
+  margin: 8px; }
+
+.tituloparrafo {
+  margin: 40px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif; }
 
 .contenido2 > div {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: row-reverse;
-}
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row-reverse; }
 
-.contenido2 div iframe{
-    width: 50%;
-}
+.contenido2 div div iframe {
+  width: 50%; }
 
+.imagenesrotadas img {
+  transition: 2s; }
 
-img{
-    border:orange solid;
-    border-radius: 10px;
-}
+.imagenesrotadas img:hover {
+  transform: rotate(360deg); }
 
-
-iframe{
-    border:orange solid;
-    border-radius: 10px;
-}
-
-p{
-    padding: 5px;
-}
-.imagenesrotadas img{
-    transition: 2s;
-}
-
-.imagenesrotadas img:hover{
-    transform:rotate(360deg);
-}
+.carousel div div img {
+  max-width: 600px;
+  max-height: 400px;
+  align-items: center;
+  justify-content: center; }
 
 /*------------------------footer------------------------*/
-footer{
+/*footer {
     margin-top: 60px;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    grid-area:footer;
+    grid-area: footer;
     margin-bottom: 10px;
     margin-left: 4px;
     padding: 10px;
-    /*background-color: red;*/
     border-radius: 10px;
     border: solid orange
 }
 
-.footer div img{
+.footer div img {
     height: auto;
     width: auto;
     max-width: 100px;
     max-height: 100px;
 }
+*/
+/*-----------------------formularios contacto------------------*/
+.container {
+  max-width: 400px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative; }
+
+#contact input[type="text"],
+#contact input[type="email"],
+#contact input[type="tel"],
+#contact input[type="url"],
+#contact textarea,
+#contact button[type="submit"] {
+  font: 400 20px/25px "Open Sans", Helvetica, Arial, sans-serif; }
+
+#contact {
+  background: #F9F9F9;
+  padding: 25px;
+  margin: 50px 0; }
+
+#contact h3 {
+  color: #F96;
+  display: block;
+  font-size: 50px;
+  font-weight: 400; }
+
+#contact h4 {
+  margin: 5px 0 15px;
+  display: block;
+  font-size: 30px; }
+
+fieldset {
+  border: medium none !important;
+  margin: 15px 0 10px;
+  min-width: 100%;
+  padding: 0;
+  width: 100%; }
+
+#contact input[type="text"],
+#contact input[type="email"],
+#contact input[type="tel"],
+#contact input[type="url"],
+#contact textarea {
+  width: 100%;
+  border: 1px solid #CCC;
+  background: #FFF;
+  margin: 15px 0 5px;
+  padding: 10px; }
+
+#contact input[type="text"]:hover,
+#contact input[type="email"]:hover,
+#contact input[type="tel"]:hover,
+#contact input[type="url"]:hover,
+#contact textarea:hover {
+  -webkit-transition: border-color 0.3s ease-in-out;
+  -moz-transition: border-color 0.3s ease-in-out;
+  transition: border-color 0.3s ease-in-out;
+  border: 1px solid #AAA; }
+
+#contact textarea {
+  height: 100px;
+  max-width: 100%;
+  resize: none; }
+
+#contact button[type="submit"] {
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  background: #0CF;
+  color: #FFF;
+  margin: 0 0 5px;
+  padding: 10px;
+  font-size: 15px; }
+
+#contact button[type="submit"]:hover {
+  background: #09C;
+  -webkit-transition: background 0.3s ease-in-out;
+  -moz-transition: background 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out; }
+
+#contact button[type="submit"]:active {
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5); }
+
+#contact input:focus,
+#contact textarea:focus {
+  outline: 0;
+  border: 1px solid #999; }
+
+::-webkit-input-placeholder {
+  color: #888; }
+
+:-moz-placeholder {
+  color: #888; }
+
+::-moz-placeholder {
+  color: #888; }
+
+:-ms-input-placeholder {
+  color: #888; }
 
 /*------------------------media queries------------------------*/
+@media screen and (max-width: 1000px) {
+  .header {
+    flex-direction: column; }
+  .menu {
+    flex-direction: column; }
+  .contenido1 > div {
+    flex-direction: column;
+    margin: 20px;
+    padding: 10px; }
+  .contenido2 > div {
+    flex-direction: column;
+    margin: 20px;
+    padding: 10px; }
+  .footer div img {
+    width: 100%; } }
 
-@media screen and (max-width:1000px){
-
-    .header{
+@media screen and (max-width: 750px) {
+  .contenedor {
+    grid-template-columns: 2fr;
+    grid-template-rows: 2fr;
+    grid-template-areas: "header" "main" "footer"; }
+  .main div img {
+    width: 100%; }
+  .footer {
+    flex-direction: column; }
+  /*.footer div {
         flex-direction: column;
-    }
+    }*/ }
 
-    .menu{
-        flex-direction: column;
-    }
-    .contenido1 > div {
-        flex-direction: column;
-        margin: 20px;
-        padding: 10px;
-    }
+.menu {
+  display: flex;
+  list-style: none;
+  font-size: large; }
 
-    .contenido2 > div{
-        flex-direction: column;
-        margin: 20px;
-        padding: 10px;
-    }
+.menu > li {
+  margin-left: 30px;
+  display: inline-block;
+  position: relative;
+  font-size: 20px; }
 
+.menu li > a {
+  text-decoration: none;
+  color: white; }
 
-}
+.menu li a:hover {
+  color: orange; }
 
-@media screen and (max-width:750px){
+.menu li > .submenu {
+  display: none;
+  position: absolute;
+  min-width: 140px; }
 
-    .contenedor{
-        grid-template-columns: 2fr;
-        grid-template-rows: 2fr;
-        grid-template-areas: 
-        "header"
-        "main"
-        "footer";
-    }
+.menu li:hover > .submenu {
+  display: block; }
 
-    .main div img{
-        width: 100%;
-    }
+.submenu {
+  position: absolute;
+  list-style: none;
+  background-color: blue; }
 
-    .footer{
-        flex-direction: column;
-    }
-
-
-}
+.submenu li a {
+  display: block;
+  padding: 15px; }

@@ -1,0 +1,167 @@
+.banner {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../Imagenes/sillonbanner.jpg")fixed center/cover;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h1 {
+            color: white;
+            font-weight: 900;
+        
+        }
+
+        p {
+            color: white;
+        }
+
+        a {
+            color: white;
+            background-color: orange;
+            width: 300px;
+            padding: 20px;
+            margin-top: 20px;
+            text-decoration: none;
+            border-radius: 15px;
+            font-weight: 600px;
+            transition: all 2s;
+        }
+
+        a:hover{
+            background-color: rgb(255, 72, 0);
+            color: rgba(255, 230, 0, 0.753);
+            transform: scale(1.5);
+        }
+        
+    }
+}
+
+.bannernosotros {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../Imagenes/bannernosostros.jpg")fixed center/cover;
+    align-items: center;
+    justify-content: center;
+
+    div{
+        padding-bottom: 50px;
+
+        h1 {
+            color: white;
+            font-weight: 900;
+        
+        }
+
+        p {
+            color: white;
+        }
+
+        a{
+            text-decoration: none;
+            color: white;
+            transition: all 1.5s;
+        }
+
+        a:hover {
+            color: blue;
+        }
+        
+    }
+}
+
+.bannercontacto {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../Imagenes/bannercontacto.jpg")fixed center/cover;
+    align-items: center;
+    justify-content: center;
+
+    div{
+        padding-bottom: 50px;
+
+        h1 {
+            color: white;
+            font-weight: 900;
+        
+        }
+
+        p {
+            color: white;
+        }
+
+        a{
+            text-decoration: none;
+            color: white;
+            transition: all 1.5s;
+        }
+
+        a:hover {
+            color: blue;
+        }
+        
+    }
+}
+
+.bannersillones {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../Imagenes/bannersillones.jpg")fixed center/cover;
+    align-items: center;
+    justify-content: center;
+
+    div{
+        padding-bottom: 50px;
+
+        h1 {
+            color: white;
+            font-weight: 900;
+        
+        }
+
+        p {
+            color: white;
+        }
+
+        a{
+            text-decoration: none;
+            color: white;
+            transition: all 1.5s;
+        }
+
+        a:hover {
+            color: blue;
+        }
+    }
+
+}
+
+.bannersillas {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../Imagenes/bannersillas.jpg")fixed center/cover;
+    align-items: center;
+    justify-content: center;
+
+    div{
+        padding-bottom: 50px;
+
+        h1 {
+            color: white;
+            font-weight: 900;
+        
+        }
+
+        p {
+            color: white;
+        }
+
+        a{
+            text-decoration: none;
+            color: white;
+            transition: all 1.5s;
+        }
+
+        a:hover {
+            color: blue;
+        }
+        
+    }
+
+}
