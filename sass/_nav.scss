@@ -1,24 +1,22 @@
-.navbar {
-    width: 100%;
-}
-
 .header {
     display: flex;
     grid-area: header;
     border: solid orange;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
+    .navbar {
+        width: 100%;
+        .container-fluid .navbar-brand img {
+            -webkit-transition: 1s linear;
+            transition: 1s linear;
+            height: auto;
+            width: auto;
+            max-width: 100px;
+            max-height: 100px;
+        }
+    }
 
-.navbar-brand img {
-    -webkit-transition: 1s linear;
-    transition: 1s linear;
-    height: auto;
-    width: auto;
-    max-width: 100px;
-    max-height: 100px;
-}
-
-.header img:hover {
-    -webkit-transform: scale(.5);
-    transform: scale(.5);
+    img:hover {
+        -webkit-transform: scale(.5);
+        transform: scale(.5);
+    }
 }

@@ -8,12 +8,14 @@ footer {
     margin-left: 4px;
     padding: 10px;
     border-radius: 10px;
-    border: solid orange
+    border: solid orange;
+    color: white;
+    background-color: orange;
+    div img {
+        height: auto;
+        width: auto;
+        max-width: 100px;
+        max-height: 100px;
+    }
 }
 
-.footer div img {
-    height: auto;
-    width: auto;
-    max-width: 100px;
-    max-height: 100px;
-}

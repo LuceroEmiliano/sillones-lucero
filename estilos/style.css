@@ -42,15 +42,17 @@ body {
       border-radius: 15px;
       font-weight: 600px;
       transition: all 2s; }
-    .banner div a:hover {
-      background-color: #ff4800;
-      color: rgba(255, 230, 0, 0.753);
-      transform: scale(1.5); }
+      .banner div a:hover {
+        background-color: #ff4800;
+        color: rgba(255, 230, 0, 0.753);
+        transform: scale(1.5); }
 
 .bannernosotros {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../Imagenes/bannernosostros.jpg") fixed center/cover;
   align-items: center;
-  justify-content: center; }
+  justify-content: center;
+  height: 60vh;
+  display: flex; }
   .bannernosotros div {
     padding-bottom: 50px; }
     .bannernosotros div h1 {
@@ -68,7 +70,9 @@ body {
 .bannercontacto {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../Imagenes/bannercontacto.jpg") fixed center/cover;
   align-items: center;
-  justify-content: center; }
+  justify-content: center;
+  height: 60vh;
+  display: flex; }
   .bannercontacto div {
     padding-bottom: 50px; }
     .bannercontacto div h1 {
@@ -86,7 +90,9 @@ body {
 .bannersillones {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../Imagenes/bannersillones.jpg") fixed center/cover;
   align-items: center;
-  justify-content: center; }
+  justify-content: center;
+  height: 60vh;
+  display: flex; }
   .bannersillones div {
     padding-bottom: 50px; }
     .bannersillones div h1 {
@@ -104,7 +110,9 @@ body {
 .bannersillas {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../Imagenes/bannersillas.jpg") fixed center/cover;
   align-items: center;
-  justify-content: center; }
+  justify-content: center;
+  height: 60vh;
+  display: flex; }
   .bannersillas div {
     padding-bottom: 50px; }
     .bannersillas div h1 {
@@ -119,26 +127,23 @@ body {
     .bannersillas div a:hover {
       color: blue; }
 
-.navbar {
-  width: 100%; }
-
 .header {
   display: flex;
   grid-area: header;
   border: solid orange;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; }
-
-.navbar-brand img {
-  -webkit-transition: 1s linear;
-  transition: 1s linear;
-  height: auto;
-  width: auto;
-  max-width: 100px;
-  max-height: 100px; }
-
-.header img:hover {
-  -webkit-transform: scale(0.5);
-  transform: scale(0.5); }
+  .header .navbar {
+    width: 100%; }
+    .header .navbar .container-fluid .navbar-brand img {
+      -webkit-transition: 1s linear;
+      transition: 1s linear;
+      height: auto;
+      width: auto;
+      max-width: 100px;
+      max-height: 100px; }
+  .header img:hover {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5); }
 
 footer {
   margin-top: 60px;
@@ -150,13 +155,38 @@ footer {
   margin-left: 4px;
   padding: 10px;
   border-radius: 10px;
-  border: solid orange; }
+  border: solid orange;
+  color: white;
+  background-color: orange; }
+  footer div img {
+    height: auto;
+    width: auto;
+    max-width: 100px;
+    max-height: 100px; }
 
-.footer div img {
-  height: auto;
-  width: auto;
-  max-width: 100px;
-  max-height: 100px; }
+.main {
+  grid-area: main; }
+  .main div {
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; }
+
+.tituloimagenes {
+  width: 100%;
+  background-color: orange; }
+  .tituloimagenes h2 {
+    font-size: 40px;
+    color: white; }
+  .tituloimagenes p {
+    font-size: 25;
+    color: white; }
+
+.imagenesrotadas {
+  margin: 50px; }
+  .imagenesrotadas img {
+    transition: 2s;
+    width: 250px; }
+    .imagenesrotadas img:hover {
+      transform: rotate(360deg); }
 
 /*
 * {
@@ -384,47 +414,69 @@ a {
 .main {
   grid-area: main; }
 
-.main div {
-  padding-top: 100px;
-  text-align: center;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; }
+/*.main div {
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}*/
+/*.tituloimagenes{
+    width: 100%;
+    background-color: orange;
+}
 
-.contenido1 > div {
-  background-color: purple;
-  margin: 5px;
-  padding: 15px;
-  display: flex;
-  align-items: center;
-  justify-content: space-around; }
+.tituloimagenes h2,p{
+    font-size: 60px;
+    color: white;
+}*/
+/*.contenido1 div {
+    margin: 5px;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
 
 .contenido1 div img {
-  padding: 20px;
-  margin: 8px; }
+    padding: 20px;
+    margin: 8px;
 
-.tituloparrafo {
-  margin: 40px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif; }
+}
 
+.contenido1 div h2,p {
+    margin: 40px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+} */
 .contenido2 > div {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   flex-direction: row-reverse; }
 
-.contenido2 div div iframe {
-  width: 50%; }
+.contenido2 div .diviframe {
+  width: 300px; }
+
+/*.imagenesrotadas{
+    margin:50px;
+}
+
+.imagenesrotadas a{
+    width: 250px;
+}
 
 .imagenesrotadas img {
-  transition: 2s; }
+    transition: 2s;
+}
 
 .imagenesrotadas img:hover {
-  transform: rotate(360deg); }
-
-.carousel div div img {
-  max-width: 600px;
-  max-height: 400px;
-  align-items: center;
-  justify-content: center; }
+    transform: rotate(360deg);
+}*/
+/*.carousel div div img {
+    max-width: 600px;
+    max-height: 400px;
+    align-items: center;
+    justify-content: center;
+}*/
+.displayflex > div {
+  display: flex; }
 
 /*------------------------footer------------------------*/
 /*footer {
