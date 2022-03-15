@@ -289,12 +289,17 @@ a {
     transform: rotate(360deg);
 }
 
-.carousel div div img {
+/*.carousel div div img {
     max-width: 600px;
     max-height: 400px;
     align-items: center;
     justify-content: center;
+}*/
+
+.displayflex > div{
+    display: flex;
 }
+
 
 /*------------------------footer------------------------*/
 /*footer {
