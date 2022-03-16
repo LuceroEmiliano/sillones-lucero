@@ -17,19 +17,21 @@ body {
   gap: 5px 0px;
   grid-template-areas: "header  header" "main    main" "footer  footer"; }
 
-.banner {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../Imagenes/sillonbanner.jpg") fixed center/cover;
-  height: 80vh;
+.generalban, .banner, .bannernosotros, .bannersillas, .bannersillones, .bannercontacto {
   display: flex;
   align-items: center;
   justify-content: center; }
+
+.banner {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../Imagenes/sillonbanner.jpg") fixed center/cover;
+  height: 80vh; }
   .banner div {
     display: flex;
     flex-direction: column;
     align-items: center; }
     .banner div h1 {
       color: white;
-      font-weight: 900; }
+      font-weight: 900px; }
     .banner div p {
       color: white; }
     .banner div a {
@@ -48,84 +50,72 @@ body {
         transform: scale(1.5); }
 
 .bannernosotros {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../Imagenes/bannernosostros.jpg") fixed center/cover;
-  align-items: center;
-  justify-content: center;
   height: 60vh;
-  display: flex; }
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../Imagenes/bannernosotros.jpg") fixed center/cover; }
   .bannernosotros div {
     padding-bottom: 50px; }
     .bannernosotros div h1 {
       color: white;
-      font-weight: 900; }
+      font-weight: 900px; }
     .bannernosotros div p {
       color: white; }
     .bannernosotros div a {
       text-decoration: none;
       color: white;
       transition: all 1.5s; }
-    .bannernosotros div a:hover {
-      color: blue; }
-
-.bannercontacto {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../Imagenes/bannercontacto.jpg") fixed center/cover;
-  align-items: center;
-  justify-content: center;
-  height: 60vh;
-  display: flex; }
-  .bannercontacto div {
-    padding-bottom: 50px; }
-    .bannercontacto div h1 {
-      color: white;
-      font-weight: 900; }
-    .bannercontacto div p {
-      color: white; }
-    .bannercontacto div a {
-      text-decoration: none;
-      color: white;
-      transition: all 1.5s; }
-    .bannercontacto div a:hover {
-      color: blue; }
-
-.bannersillones {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../Imagenes/bannersillones.jpg") fixed center/cover;
-  align-items: center;
-  justify-content: center;
-  height: 60vh;
-  display: flex; }
-  .bannersillones div {
-    padding-bottom: 50px; }
-    .bannersillones div h1 {
-      color: white;
-      font-weight: 900; }
-    .bannersillones div p {
-      color: white; }
-    .bannersillones div a {
-      text-decoration: none;
-      color: white;
-      transition: all 1.5s; }
-    .bannersillones div a:hover {
-      color: blue; }
+      .bannernosotros div a:hover {
+        color: blue; }
 
 .bannersillas {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../Imagenes/bannersillas.jpg") fixed center/cover;
-  align-items: center;
-  justify-content: center;
   height: 60vh;
-  display: flex; }
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../imagenes/bannersillas.jpg") fixed center/cover; }
   .bannersillas div {
     padding-bottom: 50px; }
     .bannersillas div h1 {
       color: white;
-      font-weight: 900; }
+      font-weight: 900px; }
     .bannersillas div p {
       color: white; }
     .bannersillas div a {
       text-decoration: none;
       color: white;
       transition: all 1.5s; }
-    .bannersillas div a:hover {
-      color: blue; }
+      .bannersillas div a:hover {
+        color: blue; }
+
+.bannersillones {
+  height: 60vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../Imagenes/bannersillones.jpg") fixed center/cover; }
+  .bannersillones div {
+    padding-bottom: 50px; }
+    .bannersillones div h1 {
+      color: white;
+      font-weight: 900px; }
+    .bannersillones div p {
+      color: white; }
+    .bannersillones div a {
+      text-decoration: none;
+      color: white;
+      transition: all 1.5s; }
+      .bannersillones div a:hover {
+        color: blue; }
+
+.bannercontacto {
+  height: 60vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../Imagenes/bannercontacto.jpg") fixed center/cover; }
+  .bannercontacto div {
+    padding-bottom: 50px; }
+    .bannercontacto div h1 {
+      color: white;
+      font-weight: 900px; }
+    .bannercontacto div p {
+      color: white; }
+    .bannercontacto div a {
+      text-decoration: none;
+      color: white;
+      transition: all 1.5s; }
+      .bannercontacto div a:hover {
+        color: blue; }
 
 .header {
   display: flex;
@@ -177,7 +167,7 @@ footer {
     font-size: 40px;
     color: white; }
   .tituloimagenes p {
-    font-size: 25;
+    font-size: 25px;
     color: white; }
 
 .imagenesrotadas {

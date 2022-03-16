@@ -1,9 +1,14 @@
-.banner {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../Imagenes/sillonbanner.jpg")fixed center/cover;
-    height: 80vh;
+.generalban {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+
+.banner {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../Imagenes/sillonbanner.jpg")fixed center/cover;
+    height: $altura-banner+20;
+    @extend .generalban;
 
     div {
         display: flex;
@@ -11,18 +16,18 @@
         align-items: center;
 
         h1 {
-            color: white;
-            font-weight: 900;
-        
+            color: $color-letra;
+            font-weight: 900px;
+
         }
 
         p {
-            color: white;
+            color: $color-letra;
         }
 
         a {
-            color: white;
-            background-color: orange;
+            color: $color-letra;
+            background-color: $color-fondo;
             width: 300px;
             padding: 20px;
             margin-top: 20px;
@@ -30,150 +35,52 @@
             border-radius: 15px;
             font-weight: 600px;
             transition: all 2s;
-            &:hover{
+
+            &:hover {
                 background-color: rgb(255, 72, 0);
                 color: rgba(255, 230, 0, 0.753);
                 transform: scale(1.5);
             }
         }
-
-        
-        
     }
 }
 
-.bannernosotros {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../Imagenes/bannernosostros.jpg")fixed center/cover;
-    align-items: center;
-    justify-content: center;
-    height: 60vh;
-    display: flex;
+
+$banners:(nosotros: url("../Imagenes/bannernosotros.jpg"),
+    sillas: url("../imagenes/bannersillas.jpg"),
+    sillones: url("../Imagenes/bannersillones.jpg"),
+    contacto: url("../Imagenes/bannercontacto.jpg"),
+);
 
 
-    div{
-        padding-bottom: 50px;
+@each $seccion,
+$direccion in $banners {
+    .banner#{$seccion} {
+        @extend .generalban;
+        height: $altura-banner;
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), $direccion fixed center/cover;
 
-        h1 {
-            color: white;
-            font-weight: 900;
-        
-        }
+        div {
+            padding-bottom: 50px;
 
-        p {
-            color: white;
-        }
+            h1 {
+                color: $color-letra;
+                font-weight: 900px;
+            }
 
-        a{
-            text-decoration: none;
-            color: white;
-            transition: all 1.5s;
-        }
+            p {
+                color: $color-letra;
+            }
 
-        a:hover {
-            color: blue;
-        }
-        
-    }
-}
+            a {
+                text-decoration: none;
+                color: $color-letra;
+                transition: all 1.5s;
 
-.bannercontacto {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../Imagenes/bannercontacto.jpg")fixed center/cover;
-    align-items: center;
-    justify-content: center;
-    height: 60vh;
-    display: flex;
-
-    div{
-        padding-bottom: 50px;
-
-        h1 {
-            color: white;
-            font-weight: 900;
-        
-        }
-
-        p {
-            color: white;
-        }
-
-        a{
-            text-decoration: none;
-            color: white;
-            transition: all 1.5s;
-        }
-
-        a:hover {
-            color: blue;
-        }
-        
-    }
-}
-
-.bannersillones {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../Imagenes/bannersillones.jpg")fixed center/cover;
-    align-items: center;
-    justify-content: center;
-    height: 60vh;
-    display: flex;
-
-
-    div{
-        padding-bottom: 50px;
-
-        h1 {
-            color: white;
-            font-weight: 900;
-        
-        }
-
-        p {
-            color: white;
-        }
-
-        a{
-            text-decoration: none;
-            color: white;
-            transition: all 1.5s;
-        }
-
-        a:hover {
-            color: blue;
+                &:hover {
+                    color: blue;
+                }
+            }
         }
     }
-
-}
-
-.bannersillas {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../Imagenes/bannersillas.jpg")fixed center/cover;
-    align-items: center;
-    justify-content: center;
-    height: 60vh;
-    display: flex;
-
-
-    div{
-        padding-bottom: 50px;
-
-        h1 {
-            color: white;
-            font-weight: 900;
-        
-        }
-
-        p {
-            color: white;
-        }
-
-        a{
-            text-decoration: none;
-            color: white;
-            transition: all 1.5s;
-        }
-
-        a:hover {
-            color: blue;
-        }
-        
-    }
-
 }
