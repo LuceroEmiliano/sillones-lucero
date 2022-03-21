@@ -486,8 +486,9 @@ fieldset {
     }
 }
 
-@media screen and (max-width:750px) {
 
+
+@media screen and (max-width:750px) {
     .contenedor {
         grid-template-columns: 2fr;
         grid-template-rows: 2fr;
@@ -505,12 +506,14 @@ fieldset {
         flex-direction: column;
     }
 
+}
+
     /*.footer div {
         flex-direction: column;
     }*/
 
 
-}
+
 
 
 

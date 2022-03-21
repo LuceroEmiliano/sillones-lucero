@@ -178,6 +178,47 @@ footer {
     .imagenesrotadas img:hover {
       transform: rotate(360deg); }
 
+.cards {
+  display: flex;
+  margin-top: 25px;
+  justify-content: center;
+  text-align: center;
+  width: auto; }
+  .cards div {
+    margin-top: 20px;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    padding: 20px;
+    transition: all 1s;
+    display: flex; }
+    .cards div:hover {
+      transform: translateY(10px); }
+    .cards div div {
+      border: solid orange 5px;
+      width: 500px;
+      height: 500px;
+      display: flex;
+      flex-direction: column; }
+      .cards div div img {
+        width: 400px;
+        height: 300px; }
+      .cards div div h2 {
+        padding-top: 25px;
+        font-size: 25px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        transition: all 1s; }
+        .cards div div h2:hover {
+          color: orange; }
+      .cards div div p {
+        font-size: 15px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; }
+
+@media screen and (max-width: 1150px) {
+  .cards > div {
+    flex-direction: column;
+    margin: 10px; } }
+
 /*
 * {
     margin: 0;
@@ -614,11 +655,11 @@ fieldset {
   .main div img {
     width: 100%; }
   .footer {
-    flex-direction: column; }
-  /*.footer div {
-        flex-direction: column;
-    }*/ }
+    flex-direction: column; } }
 
+/*.footer div {
+        flex-direction: column;
+    }*/
 .menu {
   display: flex;
   list-style: none;

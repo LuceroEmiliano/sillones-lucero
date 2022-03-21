@@ -32,3 +32,55 @@
     }
 }
 
+.cards{
+    display: flex;
+    margin-top: 25px;
+    justify-content: center;
+    text-align: center;
+    width: auto;
+    div{
+        margin-top: 20px;
+        margin-right: 10px;
+        margin-left: 10px;
+        margin-bottom: 10px;
+        padding: 20px;
+        transition: all 1s;
+        display: flex;
+        &:hover{
+            transform: translateY(10px);
+        }
+        div {
+            border: solid orange 5px;
+            width: 500px;
+            height: 500px;
+            display: flex;
+            flex-direction: column;
+            img {
+                width: 400px;
+                height: 300px;
+            }
+            h2 {
+                padding-top: 25px;
+                font-size: 25px;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                transition: all 1s;
+                
+                &:hover{
+                    color: orange;
+                }
+            }
+            p {
+                font-size: 15px;
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width:1150px) {
+    .cards > div{
+        flex-direction: column;
+        margin: 10px;
+    }
+}
