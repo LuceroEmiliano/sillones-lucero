@@ -18,6 +18,7 @@
         h1 {
             color: $color-letra;
             font-weight: 900px;
+            text-shadow: 2px 2px 3px orange;
 
         }
 
@@ -64,11 +65,14 @@ $direccion in $banners {
             padding-bottom: 50px;
 
             h1 {
+                font-size: $font-size-tit;
                 color: $color-letra;
                 font-weight: 900px;
+                padding-bottom: 40px;
             }
 
             p {
+                font-size: $font-size-par;
                 color: $color-letra;
             }
 

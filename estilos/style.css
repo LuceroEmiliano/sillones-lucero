@@ -8,14 +8,14 @@ body {
   color: darkblue; }
 
 .contenedor {
-  /*width: 90%;
-    margin:20px;*/
   display: grid;
   gap: 10px;
   grid-template-columns: 1fr;
   grid-template-rows: 0.2fr auto 0.2fr;
   gap: 5px 0px;
-  grid-template-areas: "header  header" "main    main" "footer  footer"; }
+  grid-template-areas: "header  header"
+ "main    main"
+ "footer  footer"; }
 
 .generalban, .banner, .bannernosotros, .bannersillas, .bannersillones, .bannercontacto {
   display: flex;
@@ -31,7 +31,8 @@ body {
     align-items: center; }
     .banner div h1 {
       color: white;
-      font-weight: 900px; }
+      font-weight: 900px;
+      text-shadow: 2px 2px 3px orange; }
     .banner div p {
       color: white; }
     .banner div a {
@@ -55,9 +56,12 @@ body {
   .bannernosotros div {
     padding-bottom: 50px; }
     .bannernosotros div h1 {
+      font-size: 40px;
       color: white;
-      font-weight: 900px; }
+      font-weight: 900px;
+      padding-bottom: 40px; }
     .bannernosotros div p {
+      font-size: 25px;
       color: white; }
     .bannernosotros div a {
       text-decoration: none;
@@ -72,9 +76,12 @@ body {
   .bannersillas div {
     padding-bottom: 50px; }
     .bannersillas div h1 {
+      font-size: 40px;
       color: white;
-      font-weight: 900px; }
+      font-weight: 900px;
+      padding-bottom: 40px; }
     .bannersillas div p {
+      font-size: 25px;
       color: white; }
     .bannersillas div a {
       text-decoration: none;
@@ -89,9 +96,12 @@ body {
   .bannersillones div {
     padding-bottom: 50px; }
     .bannersillones div h1 {
+      font-size: 40px;
       color: white;
-      font-weight: 900px; }
+      font-weight: 900px;
+      padding-bottom: 40px; }
     .bannersillones div p {
+      font-size: 25px;
       color: white; }
     .bannersillones div a {
       text-decoration: none;
@@ -106,9 +116,12 @@ body {
   .bannercontacto div {
     padding-bottom: 50px; }
     .bannercontacto div h1 {
+      font-size: 40px;
       color: white;
-      font-weight: 900px; }
+      font-weight: 900px;
+      padding-bottom: 40px; }
     .bannercontacto div p {
+      font-size: 25px;
       color: white; }
     .bannercontacto div a {
       text-decoration: none;
@@ -134,8 +147,11 @@ body {
   .header img:hover {
     -webkit-transform: scale(0.5);
     transform: scale(0.5); }
+  .header .nav-link {
+    font-size: 20px; }
 
 footer {
+  font-size: 20px;
   margin-top: 60px;
   display: flex;
   justify-content: space-around;
@@ -162,7 +178,8 @@ footer {
 
 .tituloimagenes {
   width: 100%;
-  background-color: orange; }
+  background-color: orange;
+  margin-top: 20px; }
   .tituloimagenes h2 {
     font-size: 40px;
     color: white; }
@@ -196,12 +213,14 @@ footer {
       transform: translateY(10px); }
     .cards div div {
       border: solid orange 5px;
+      border-radius: 30px;
+      box-shadow: 3px 4px 19px 0px black;
       width: 500px;
       height: 500px;
       display: flex;
       flex-direction: column; }
       .cards div div img {
-        width: 400px;
+        width: 460px;
         height: 300px; }
       .cards div div h2 {
         padding-top: 25px;
@@ -217,265 +236,21 @@ footer {
 @media screen and (max-width: 1150px) {
   .cards > div {
     flex-direction: column;
-    margin: 10px; } }
+    margin: 10px; }
+  .imagenesrotadas img {
+    width: 200px; }
+  .imagenindex img {
+    width: 250px; }
+ }
 
-/*
-* {
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: large;
-    color: darkblue
-}
-
-.contenedor {
-    display: grid;
-    gap: 10px;
-    grid-template-columns: 1fr;
-    grid-template-rows: 0.2fr auto 0.2fr;
-    gap: 5px 0px;
-    grid-template-areas:
-        "header  header"
-        "main    main"
-        "footer  footer";
-}*/
-/*.banner {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../Imagenes/sillonbanner.jpg")fixed center/cover;
-    height: 80vh;
+@media screen and (max-width: 750px) {
+  .main div img {
+    width: 250px;
+    height: 250px; }
+  .imagenesrotadas {
     display: flex;
-    align-items: center;
-    justify-content: center;
-}
+    flex-direction: column; } }
 
-.banner div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.banner div h1 {
-    color: white;
-    font-weight: 900;
-
-}
-
-.banner div p {
-    color: white;
-}
-
-.banner div a {
-    color: white;
-    background-color: orange;
-    width: 300px;
-    padding: 20px;
-    margin-top: 20px;
-    text-decoration: none;
-    border-radius: 15px;
-    font-weight: 600px;
-    transition: all 2s;
-}
-
-
-.banner div a:hover{
-    background-color: rgb(255, 72, 0);
-    color: rgba(255, 230, 0, 0.753);
-    transform: scale(1.5);
-}
-
-.bannernosotros {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../Imagenes/bannernosostros.jpg")fixed center/cover;
-    align-items: center;
-    justify-content: center;
-}
-
-.bannernosotros div{
-    padding-bottom: 50px;
-}
-
-.bannernosotros div h1 {
-    color: white;
-    font-weight: 900;
-
-}
-
-.bannernosotros div p {
-    color: white;
-}
-
-.bannernosotros div a{
-    text-decoration: none;
-    color: white;
-    transition: all 1.5s;
-}
-
-.bannernosotros div a:hover {
-    color: blue;
-}
-
-.bannercontacto {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../Imagenes/bannercontacto.jpg")fixed center/cover;
-    align-items: center;
-    justify-content: center;
-}
-
-.bannercontacto div h1 {
-    color: white;
-    font-weight: 900;
-
-}
-.bannercontacto div{
-    padding-bottom: 50px;
-}
-
-.bannercontacto div p {
-    color: white;
-}
-
-.bannercontacto div a{
-    text-decoration: none;
-    color: white;
-    transition: all 1.5s;
-}
-
-.bannercontacto div a:hover {
-    color: blue;
-}
-
-.bannersillones {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../Imagenes/bannersillones.jpg")fixed center/cover;
-    align-items: center;
-    justify-content: center;
-}
-
-.bannersillones div{
-    padding-bottom: 50px;
-}
-
-.bannersillones div h1 {
-    color: white;
-    font-weight: 900;
-
-}
-
-.bannersillones div p {
-    color: white;
-}
-
-.bannersillones div a{
-    text-decoration: none;
-    color: white;
-    transition: all 1.5s;
-}
-
-.bannersillones div a:hover {
-    color: blue;
-}
-
-.bannersillas {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../Imagenes/bannersillas.jpg")fixed center/cover;
-    align-items: center;
-    justify-content: center;
-}
-
-.bannersillas div{
-    padding-bottom: 50px;
-}
-
-.bannersillas div h1 {
-    color: white;
-    font-weight: 900;
-
-}
-
-.bannersillas div p {
-    color: white;
-}
-
-.bannersillas div a{
-    text-decoration: none;
-    color: white;
-    transition: all 1.5s;
-}
-
-.bannersillas div a:hover {
-    color: blue;
-}*/
-/*------------------------header------------------------*/
-/*.navbar {
-    width: 100%;
-}
-
-.header {
-    display: flex;
-    grid-area: header;
-    border: solid orange;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
-
-
-a {
-    transition: color 0.4s linear 0.2s;
-}
-
-
-
-.navbar-brand img {
-    -webkit-transition: 1s linear;
-    transition: 1s linear;
-    height: auto;
-    width: auto;
-    max-width: 100px;
-    max-height: 100px;
-}
-
-.header img:hover {
-    -webkit-transform: scale(.5);
-    transform: scale(.5);
-}*/
-/*.carousel-inner div img{
-    height: auto;
-    width: auto;
-    max-width: 500px;
-    max-height: 300px;
-}*/
-/*------------------------main------------------------*/
-.main {
-  grid-area: main; }
-
-/*.main div {
-    text-align: center;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}*/
-/*.tituloimagenes{
-    width: 100%;
-    background-color: orange;
-}
-
-.tituloimagenes h2,p{
-    font-size: 60px;
-    color: white;
-}*/
-/*.contenido1 div {
-    margin: 5px;
-    padding: 15px;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
-
-.contenido1 div img {
-    padding: 20px;
-    margin: 8px;
-
-}
-
-.contenido1 div h2,p {
-    margin: 40px;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-} */
 .contenido2 > div {
   display: flex;
   justify-content: space-between;
@@ -485,51 +260,9 @@ a {
 .contenido2 div .diviframe {
   width: 300px; }
 
-/*.imagenesrotadas{
-    margin:50px;
-}
-
-.imagenesrotadas a{
-    width: 250px;
-}
-
-.imagenesrotadas img {
-    transition: 2s;
-}
-
-.imagenesrotadas img:hover {
-    transform: rotate(360deg);
-}*/
-/*.carousel div div img {
-    max-width: 600px;
-    max-height: 400px;
-    align-items: center;
-    justify-content: center;
-}*/
 .displayflex > div {
   display: flex; }
 
-/*------------------------footer------------------------*/
-/*footer {
-    margin-top: 60px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    grid-area: footer;
-    margin-bottom: 10px;
-    margin-left: 4px;
-    padding: 10px;
-    border-radius: 10px;
-    border: solid orange
-}
-
-.footer div img {
-    height: auto;
-    width: auto;
-    max-width: 100px;
-    max-height: 100px;
-}
-*/
 /*-----------------------formularios contacto------------------*/
 .container {
   max-width: 400px;
@@ -598,14 +331,14 @@ fieldset {
   cursor: pointer;
   width: 100%;
   border: none;
-  background: #0CF;
+  background: orange;
   color: #FFF;
   margin: 0 0 5px;
   padding: 10px;
   font-size: 15px; }
 
 #contact button[type="submit"]:hover {
-  background: #09C;
+  background: orange;
   -webkit-transition: background 0.3s ease-in-out;
   -moz-transition: background 0.3s ease-in-out;
   transition: background-color 0.3s ease-in-out; }
@@ -634,63 +367,25 @@ fieldset {
 @media screen and (max-width: 1000px) {
   .header {
     flex-direction: column; }
-  .menu {
-    flex-direction: column; }
-  .contenido1 > div {
-    flex-direction: column;
-    margin: 20px;
-    padding: 10px; }
   .contenido2 > div {
     flex-direction: column;
     margin: 20px;
     padding: 10px; }
   .footer div img {
-    width: 100%; } }
+    width: 100%; }
+  .footer .redessociales img {
+    width: 100px;
+    height: 100px; } }
 
 @media screen and (max-width: 750px) {
   .contenedor {
     grid-template-columns: 2fr;
     grid-template-rows: 2fr;
-    grid-template-areas: "header" "main" "footer"; }
-  .main div img {
-    width: 100%; }
+    grid-template-areas: "header"
+ "main"
+ "footer"; }
   .footer {
-    flex-direction: column; } }
-
-/*.footer div {
-        flex-direction: column;
-    }*/
-.menu {
-  display: flex;
-  list-style: none;
-  font-size: large; }
-
-.menu > li {
-  margin-left: 30px;
-  display: inline-block;
-  position: relative;
-  font-size: 20px; }
-
-.menu li > a {
-  text-decoration: none;
-  color: white; }
-
-.menu li a:hover {
-  color: orange; }
-
-.menu li > .submenu {
-  display: none;
-  position: absolute;
-  min-width: 140px; }
-
-.menu li:hover > .submenu {
-  display: block; }
-
-.submenu {
-  position: absolute;
-  list-style: none;
-  background-color: blue; }
-
-.submenu li a {
-  display: block;
-  padding: 15px; }
+    flex-direction: column; }
+    .footer .redessociales img {
+      width: 50px;
+      height: 50px; } }

@@ -19,4 +19,9 @@
         -webkit-transform: scale(.5);
         transform: scale(.5);
     }
+
+    .nav-link{
+        font-size: $font-size-par - 5px;
+    }
 }
+

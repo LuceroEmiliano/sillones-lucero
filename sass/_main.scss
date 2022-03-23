@@ -10,12 +10,13 @@
 .tituloimagenes{
     width: 100%;
     background-color: $color-fondo;
+    margin-top: 20px;
     h2{
-        font-size: 40px;
+        font-size: $font-size-tit;
         color: white;
     }
     p{
-        font-size: 25px;
+        font-size: $font-size-par;
         color: white;
     }
 }
@@ -51,12 +52,14 @@
         }
         div {
             border: solid orange 5px;
+            border-radius: 30px;
+            box-shadow: 3px 4px 19px 0px rgb(0,0,0);
             width: 500px;
             height: 500px;
             display: flex;
             flex-direction: column;
             img {
-                width: 400px;
+                width: 460px;
                 height: 300px;
             }
             h2 {
@@ -82,5 +85,33 @@
     .cards > div{
         flex-direction: column;
         margin: 10px;
+    }
+
+    .imagenesrotadas{
+        img{
+            width: 200px;
+        }
+    }
+
+    .imagenindex{
+        img{
+            width: 250px;
+        }
+    }
+
+}
+
+@media screen and (max-width:750px) {
+    .main {
+        div {
+            img {
+                width: 250px;
+                height: 250px;
+            }
+        }
+    }
+    .imagenesrotadas {
+        display: flex;
+        flex-direction: column;
     }
 }
