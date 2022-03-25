@@ -1,3 +1,6 @@
+@import "../base/variables";
+
+
 .main {
     grid-area: main;
     div {
@@ -80,6 +83,16 @@
     }
 }
 
+.contenido2>div {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    text-align: center;
+    iframe{
+        width: 300px;
+    }
+}
+
 
 @media screen and (max-width:1150px) {
     .cards > div{
@@ -97,6 +110,15 @@
         img{
             width: 250px;
         }
+    }
+}
+
+@media screen and (max-width:1000px) {
+
+    .contenido2>div {
+        flex-direction: column;
+        margin: 20px;
+        padding: 10px;
     }
 
 }

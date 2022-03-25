@@ -1,23 +1,12 @@
-@import "generales";
-@import "banners";
-@import "nav";
-@import "footer";
-@import "main";
+@import "./base/root";
+@import "./base/variables";
+@import "./componentes/generales";
+@import "./componentes/banners";
+@import "./componentes/nav";
+@import "./componentes/main";
+@import "./componentes/footer";
 
-.contenido2>div {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: row-reverse;
-}
 
-.contenido2 div .diviframe {
-    width: 300px;
-}
-
-.displayflex > div{
-    display: flex;
-}
 /*-----------------------formularios contacto------------------*/
 
 .container {
@@ -137,54 +126,3 @@ fieldset {
 }
 
 
-/*------------------------media queries------------------------*/
-
-@media screen and (max-width:1000px) {
-
-    .header {
-        flex-direction: column;
-    }
-
-    .contenido2>div {
-        flex-direction: column;
-        margin: 20px;
-        padding: 10px;
-    }
-
-    .footer div img{
-        width: 100%;
-    }
-    .footer {
-        .redessociales{
-            img{
-                width: 100px;
-                height: 100px;
-            }
-        }
-    }
-}
-
-
-
-@media screen and (max-width:750px) {
-    .contenedor {
-        grid-template-columns: 2fr;
-        grid-template-rows: 2fr;
-        grid-template-areas:
-            "header"
-            "main"
-            "footer";
-    }
-
-
-    .footer {
-        flex-direction: column;
-        .redessociales{
-            img{
-                width: 50px;
-                height: 50px;
-            }
-        }
-    }
-
-}

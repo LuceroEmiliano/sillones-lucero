@@ -13,9 +13,13 @@ body {
   grid-template-columns: 1fr;
   grid-template-rows: 0.2fr auto 0.2fr;
   gap: 5px 0px;
-  grid-template-areas: "header  header"
- "main    main"
- "footer  footer"; }
+  grid-template-areas: "header  header" "main    main" "footer  footer"; }
+
+@media screen and (max-width: 750px) {
+  .contenedor {
+    grid-template-columns: 2fr;
+    grid-template-rows: 2fr;
+    grid-template-areas: "header" "main" "footer"; } }
 
 .generalban, .banner, .bannernosotros, .bannersillas, .bannersillones, .bannercontacto {
   display: flex;
@@ -150,25 +154,9 @@ body {
   .header .nav-link {
     font-size: 20px; }
 
-footer {
-  font-size: 20px;
-  margin-top: 60px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  grid-area: footer;
-  margin-bottom: 10px;
-  margin-left: 4px;
-  padding: 10px;
-  border-radius: 10px;
-  border: solid orange;
-  color: white;
-  background-color: orange; }
-  footer div img {
-    height: auto;
-    width: auto;
-    max-width: 100px;
-    max-height: 100px; }
+@media screen and (max-width: 1000px) {
+  .header {
+    flex-direction: column; } }
 
 .main {
   grid-area: main; }
@@ -233,6 +221,14 @@ footer {
         font-size: 15px;
         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; }
 
+.contenido2 > div {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  text-align: center; }
+  .contenido2 > div iframe {
+    width: 300px; }
+
 @media screen and (max-width: 1150px) {
   .cards > div {
     flex-direction: column;
@@ -240,8 +236,13 @@ footer {
   .imagenesrotadas img {
     width: 200px; }
   .imagenindex img {
-    width: 250px; }
- }
+    width: 250px; } }
+
+@media screen and (max-width: 1000px) {
+  .contenido2 > div {
+    flex-direction: column;
+    margin: 20px;
+    padding: 10px; } }
 
 @media screen and (max-width: 750px) {
   .main div img {
@@ -251,17 +252,39 @@ footer {
     display: flex;
     flex-direction: column; } }
 
-.contenido2 > div {
+footer {
+  font-size: 20px;
+  margin-top: 60px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  flex-direction: row-reverse; }
+  grid-area: footer;
+  margin-bottom: 10px;
+  margin-left: 4px;
+  padding: 10px;
+  border-radius: 10px;
+  border: solid orange;
+  color: white;
+  background-color: orange; }
+  footer div img {
+    height: auto;
+    width: auto;
+    max-width: 100px;
+    max-height: 100px; }
 
-.contenido2 div .diviframe {
-  width: 300px; }
+@media screen and (max-width: 1000px) {
+  .footer div img {
+    width: 100%; }
+  .footer .redessociales img {
+    width: 100px;
+    height: 100px; } }
 
-.displayflex > div {
-  display: flex; }
+@media screen and (max-width: 750px) {
+  .footer {
+    flex-direction: column; }
+    .footer .redessociales img {
+      width: 50px;
+      height: 50px; } }
 
 /*-----------------------formularios contacto------------------*/
 .container {
@@ -362,30 +385,3 @@ fieldset {
 
 :-ms-input-placeholder {
   color: #888; }
-
-/*------------------------media queries------------------------*/
-@media screen and (max-width: 1000px) {
-  .header {
-    flex-direction: column; }
-  .contenido2 > div {
-    flex-direction: column;
-    margin: 20px;
-    padding: 10px; }
-  .footer div img {
-    width: 100%; }
-  .footer .redessociales img {
-    width: 100px;
-    height: 100px; } }
-
-@media screen and (max-width: 750px) {
-  .contenedor {
-    grid-template-columns: 2fr;
-    grid-template-rows: 2fr;
-    grid-template-areas: "header"
- "main"
- "footer"; }
-  .footer {
-    flex-direction: column; }
-    .footer .redessociales img {
-      width: 50px;
-      height: 50px; } }

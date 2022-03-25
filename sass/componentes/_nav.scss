@@ -1,3 +1,5 @@
+@import "../base/variables";
+
 .header {
     display: flex;
     grid-area: header;
@@ -23,5 +25,12 @@
     .nav-link{
         font-size: $font-size-par - 5px;
     }
+}
+
+@media screen and (max-width:1000px) {
+.header {
+    flex-direction: column;
+}
+
 }
 
