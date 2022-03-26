@@ -88,6 +88,7 @@
     flex-direction: row-reverse;
     justify-content: center;
     text-align: center;
+    margin: 25px;
     iframe{
         width: 300px;
     }
@@ -119,6 +120,9 @@
         flex-direction: column;
         margin: 20px;
         padding: 10px;
+        iframe{
+            width: 100%;
+        }
     }
 
 }
