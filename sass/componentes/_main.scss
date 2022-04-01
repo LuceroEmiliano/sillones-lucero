@@ -10,10 +10,14 @@
 
 }
 
+
+
 .tituloimagenes{
     width: 100%;
     background-color: $color-fondo;
     margin-top: 20px;
+    display: flex;
+    flex-direction: column;
     h2{
         font-size: $font-size-tit;
         color: white;
@@ -22,6 +26,27 @@
         font-size: $font-size-par;
         color: white;
     }
+}
+
+.contenido2{
+    background-color: $color-fondo;
+    div {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        text-align: center;
+        /*margin: 25px;*/
+        div{
+            iframe{
+                width: 300px;
+            }
+        }
+        .tituloimagenes{
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
 }
 
 
@@ -67,7 +92,7 @@
             }
             h2 {
                 padding-top: 25px;
-                font-size: 25px;
+                font-size: $font-size-tit-cards;
                 font-family: Verdana, Geneva, Tahoma, sans-serif;
                 transition: all 1s;
                 
@@ -76,24 +101,12 @@
                 }
             }
             p {
-                font-size: 15px;
+                font-size: $font-size-par-cards;
                 font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
             }
         }
     }
 }
-
-.contenido2>div {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: center;
-    text-align: center;
-    margin: 25px;
-    iframe{
-        width: 300px;
-    }
-}
-
 
 @media screen and (max-width:1150px) {
     .cards > div{
@@ -139,5 +152,24 @@
     .imagenesrotadas {
         display: flex;
         flex-direction: column;
+    }
+
+    .tituloimagenes{
+        h2{
+            font-size: $font-size-tit - 5px;
+        }
+        p{
+            font-size: $font-size-par - 5px;
+        }
+    }
+
+    .cards div div{
+        h2{
+            font-size: $font-size-par-cards;
+        }
+        p{
+            font-size: $font-size-par-cards;
+        }
+
     }
 }
